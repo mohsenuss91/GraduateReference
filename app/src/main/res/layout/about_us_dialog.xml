@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="صنع التطبيق بواسطة فريق White Desert"
+        android:id="@+id/textView"
+        android:textColor="#000000"
+        android:fontFamily="KCastOne"
+        android:focusableInTouchMode="false"
+        android:textSize="17sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="يرجى ارسال الملاحظات والاقتراحات لتحسين التطبيق"
+        android:id="@+id/textView6"
+        android:fontFamily="KCastONe"
+        android:textColor="#000000"
+        android:layout_marginTop="43dp"
+
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="61dp"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WhiteDesertTeam@gmail.com"
+        android:autoLink="email"
+android:textSize="15sp"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignLeft="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حسابنا على التويتر:"
+        android:id="@+id/textView4"
+        android:fontFamily="KCastOne"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://twitter.com/WhiteDesertT"
+        android:autoLink="web"
+        android:textSize="15sp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView6" />
+
+    <TextView
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:text="البريد الإلكتروني:"
+        android:textSize="20sp"
+
+        android:id="@+id/textView2"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3" />
+
+</RelativeLayout>

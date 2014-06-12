@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+    >
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="5dip">
+
+
+    <ImageView
+        android:id="@+id/univListImage"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:background="@android:color/transparent"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <!-- name Of University-->
+    <TextView
+        android:id="@+id/univListName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="اسم الجامعة"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dip"
+        />
+
+    <!-- rank of University -->
+    <TextView
+        android:id="@+id/univListRank"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/univListName"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#343434"
+        android:textSize="15sp"
+
+        android:textStyle="bold"
+        android:layout_marginTop="1dip"
+        android:text="الترتيب العالمي" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/univListRegion"
+        android:layout_below="@+id/univListRank"
+        android:layout_toRightOf="@+id/thumbnail"
+
+        android:textStyle="bold"
+        android:layout_marginTop="1dip"
+        android:textColor="#343434"
+
+        android:text="المنطقة"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name = "locations_array">
+        <item >الرياض</item>
+        <item > القصيم</item>
+        <item >الشرقية</item>
+        <item >جازان</item>
+        <item >مكة المكرمة</item>
+        <item >المدينة المنورة</item>
+        <item >حائل</item>
+        <item >تبوك</item>
+        <item >الجوف</item>
+        <item >عرعر</item>
+        <item >عسير</item>
+        <item >نجران</item>
+        <item >الباحة</item>
+    </string-array>
+    
+    <string-array name = "thssat">
+        
+        <item >الحاسب</item>
+        <item >الطب</item>
+        <item >التصميم</item>
+        <item >هندسة</item>
+        <item >ادارة اعمال </item>
+        <item >إلكترونيات </item>
+        <item >رياضة </item>
+        <item >فنية </item>
+        
+    </string-array>
+    
+    <string-array name = "thssThanoe">
+        <item >علمي</item>
+        <item >شرعي</item>
+        
+    </string-array>
+    
+    <string-array name="sex">
+        <item >ذكر</item>
+        
+        <item >انثى</item>
+        
+    </string-array>
+    <string name="app_name">مرجع المتخرج</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="univs_list">قائمة الجامعات</string>
+
+
+</resources>

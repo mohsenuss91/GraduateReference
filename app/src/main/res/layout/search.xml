@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/searchUnivList"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/trakmeView"
+        android:layout_toLeftOf="@+id/trakmeView"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+         >
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/qdratView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/searchUnivList"
+        android:layout_alignBottom="@+id/searchUnivList"
+        android:layout_marginRight="54dp"
+        android:layout_toLeftOf="@+id/searchUnivList"
+        android:text="نسبة القدرات" />
+
+    <TextView
+        android:id="@+id/locationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/thseleeView"
+        android:layout_centerVertical="true"
+        android:text="المنطقة" />
+
+    <TextView
+        android:id="@+id/sexView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/locationView"
+        android:layout_alignBottom="@+id/locationView"
+        android:layout_alignRight="@+id/qdratView"
+        android:text="الجنس" />
+
+    <Spinner
+        android:id="@+id/locationSpinner"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/sexSpinner"
+        android:layout_toLeftOf="@+id/thseleeView" />
+
+    <TextView
+        android:id="@+id/thseleeView"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/locationSpinner"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:text="نسبة التحصيلي" />
+
+    <Spinner
+        android:id="@+id/sexSpinner"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/qdratView" />
+
+    <Spinner
+        android:id="@+id/thssSpinner"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/thssView"
+        android:layout_toRightOf="@+id/sexSpinner" />
+
+    <TextView
+        android:id="@+id/thssView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/locationSpinner"
+        android:layout_marginTop="61dp"
+        android:text="التخصص المطلوب" />
+
+    <EditText
+        android:id="@+id/thseleeEdit"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/thssThanoeView"
+        android:layout_alignBottom="@+id/thssThanoeView"
+        android:layout_toRightOf="@+id/qdratView"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+         >
+
+       
+    </EditText>
+
+    <TextView
+        android:id="@+id/thssThanoeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thssThanoeSpinner"
+        android:layout_alignLeft="@+id/qdratView"
+        android:text="التخصص الثانوي" />
+
+    <Spinner
+        android:id="@+id/thssThanoeSpinner"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/sexSpinner"
+        android:layout_alignTop="@+id/thseleeView" />
+
+    <EditText
+        android:id="@+id/qdratEdit"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/qdratView"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+         >
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/trakmeView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thseleeView"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:text="نسبة التراكمي" />
+
+    <Button
+        android:id="@+id/searchForUnivBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:layout_toRightOf="@+id/sexView"
+        android:text="بحث" />
+
+</RelativeLayout>

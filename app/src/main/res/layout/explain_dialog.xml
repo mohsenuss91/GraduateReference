@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قائمة الجامعات : تضم جميع الجامعات في السعودية والمعلومات المهمة عنها"
+        android:textSize="15sp"
+        android:layout_gravity="right"
+
+        />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="قائمة التخصصات : تضم كل التخصصات الموجود في سوق العمل , وتشرح كل تخصص وماله من تخصصات فرعية , وأين يدرس هذا التخصص"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ملاحظة : للوصول الى الخيارات اضغط زر القائمة"
+        android:layout_gravity="right"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/continueExplain"
+        android:layout_gravity="center"
+        android:text="الإستمرار في استخدام التطبيق"
+        />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.WhiteDessert.GraduateReference.Views.LayoutListView
+            android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+    android:id="@android:id/list"
+
+
+    android:scrollbarStyle="outsideOverlay"
+            />
+
+
+

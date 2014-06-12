@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:id="@+id/aboutAppText"
+        android:text="صمم هذا التطبيق بغاية تسهيل اختيار الجامعة والتخصص على الطالب المتخرج
+
+وينقسم الى قسمين
+
+القسم الاول
+
+قائمة الجامعات : تضم جميع الجامعات في السعودية وبعض المعلومات عنها
+
+القسم الثاني
+
+قائمة التخصصات : وتضم التخصصات الموجودة في سوق العمل , وتشرح كل تخصص وماله من تخصصات فرعية , وأين يدرس هذا التخصص"/>
+</LinearLayout>
