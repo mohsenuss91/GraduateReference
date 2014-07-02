@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <EditText
+   <!-- <EditText
         android:id="@+id/searchUnivList"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
@@ -146,5 +146,5 @@
         android:layout_marginBottom="26dp"
         android:layout_toRightOf="@+id/sexView"
         android:text="بحث" />
-
+-->
 </RelativeLayout>

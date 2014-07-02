@@ -168,7 +168,7 @@ Intent i = new Intent(Intent.ACTION_VIEW,uri);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
         inflater.inflate(R.menu.share,menu);
-        menu.getItem(3).setTitle("مشاركة التطبيق");
+        menu.getItem(4).setTitle("مشاركة التطبيق");
         return true;
     }
 
@@ -206,6 +206,11 @@ Intent i = new Intent(Intent.ACTION_VIEW,uri);
     }
 
 
+    private void onClickCalcPerc(){
+        Intent i = new Intent(this,PercActivity.class);
+
+        startActivity(i);
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
            switch(item.getItemId()){
@@ -216,6 +221,8 @@ Intent i = new Intent(Intent.ACTION_VIEW,uri);
                case R.id.reference_menu:onClickReference();return true;
 
                case R.id.app_about_meun:onClickAppAbout();return true;
+
+               case R.id.perc_menu:onClickCalcPerc();return true;
                default:return super.onOptionsItemSelected(item);
            }
 
@@ -223,7 +230,7 @@ Intent i = new Intent(Intent.ACTION_VIEW,uri);
 
     private void openDataBaseAndInsert(){
                 db = new ReferenceDB(MainActivity.this);
-        boolean isFirst = db.isFirst;
+
                 db.open();
 
                 db.close();

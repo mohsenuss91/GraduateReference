@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="النسب التي حصلت عليها"
+            android:textSize="12sp"
+
+            android:lines="1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="التراكمي"
+            android:numeric="integer"
+            android:id="@+id/trakmeUserEdit"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="القدرات"
+            android:layout_marginTop="30dp"
+            android:numeric="integer"
+            android:id="@+id/qdratUserEdit"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/thseleUserEdit"
+            android:numeric="integer"
+            android:hint="التحصيلي"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="النسب المحددة من الجامعة"
+            android:textSize="12sp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="التراكمي"
+            android:id="@+id/trakmeUnivEdit"
+            android:numeric="integer"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="القدرات"
+            android:id="@+id/qdratUnivEdit"
+            android:numeric="integer"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="التحصيلي"
+            android:layout_marginTop="30dp"
+            android:id="@+id/thseleUnivEdit"
+            android:numeric="integer"
+            />
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="احسب النسبة المركبة"
+        android:onClick="onClickCalc"
+        android:id="@+id/button"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:textSize="30sp"
+        android:id="@+id/percResult"
+        android:layout_below="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+</RelativeLayout>

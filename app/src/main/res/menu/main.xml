@@ -17,4 +17,11 @@
         android:id="@+id/app_about_meun"
         android:title="عن التطبيق"
         />
+
+    <item
+
+        android:id="@+id/perc_menu"
+        android:title="حساب النسبة المركبة"
+
+        />
 </menu>

@@ -2,17 +2,8 @@ package com.WhiteDessert.GraduateReference.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.View;
-import android.view.View.OnFocusChangeListener;
-import android.view.Window;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
-
-import com.whitedessert.graduatereference.R;
 
 
 public class SearchActivity extends Activity {
@@ -25,14 +16,14 @@ public class SearchActivity extends Activity {
 private EditText trakmeEdit;
 
  String numberString;
-
+//unused class !!
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         // /EditText qdratEdit;
         // //EditText thseleEdit;
-        super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.search);
+       // super.onCreate(savedInstanceState);
+      //  this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        /*setContentView(R.layout.search);
                 trakmeEdit = (EditText)this.findViewById(R.id.searchUnivList);
       //  qdratEdit = (EditText)this.findViewById(R.id.qdratEdit);
        // thseleEdit = (EditText)this.findViewById(R.id.thseleeEdit);
@@ -77,12 +68,12 @@ private EditText trakmeEdit;
 		        	
 		        				        		
 		        	
-		        }
+	/*	        }
         	
         });
         
         
-         thssSpinner = (Spinner)this.findViewById(R.id.thssSpinner);
+         /*thssSpinner = (Spinner)this.findViewById(R.id.thssSpinner);
         
          locationSpinner = (Spinner)this.findViewById(R.id.locationSpinner);
        
@@ -92,11 +83,11 @@ private EditText trakmeEdit;
          
         attachAdaptersToSpinners();
 
-        
+        */
         
 	}
 	
-	private void attachAdaptersToSpinners(){
+	/*private void attachAdaptersToSpinners(){
 		ArrayAdapter<CharSequence> thssAdapter = ArrayAdapter.createFromResource(this, R.array.thssat, android.R.layout.simple_spinner_item);
 		thssAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		thssSpinner.setAdapter(thssAdapter);
@@ -115,5 +106,5 @@ private EditText trakmeEdit;
         ArrayAdapter<CharSequence> thssThanoeAdapter = ArrayAdapter.createFromResource(this, R.array.thssThanoe, android.R.layout.simple_spinner_item);
         thssThanoeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         thssThanoeSpinner.setAdapter(thssThanoeAdapter);
-	}
+	}*/
 }
