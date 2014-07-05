@@ -114,10 +114,10 @@ adView = RefHlp.getAdView(this);
 
     private ArrayList<String> getUnivsFromText(){
 
-        ArrayList<String> selectedUnivsNames = new ArrayList<String>();
-        ArrayList<String> univNames = RefHlp.getUnivsNames(this);
+        final ArrayList<String> selectedUnivsNames = new ArrayList<String>();
+       final ArrayList<String> univNames = RefHlp.getUnivsNames(this);
 
-        String whereToStudy4Compare = specWhereToStudy.getText().toString();
+        final String whereToStudy4Compare = specWhereToStudy.getText().toString();
 
 
        if (!whereToStudy4Compare.equals("لاتوجد أية معلومات")){
