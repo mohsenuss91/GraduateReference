@@ -38,7 +38,7 @@ public class MainActivity extends android.support.v4.app.FragmentActivity {
     private AdView adView;
 
 
-    @SuppressWarnings("NewApi")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -228,15 +228,7 @@ Intent i = new Intent(Intent.ACTION_VIEW,uri);
 
     }
 
-    private void openDataBaseAndInsert(){
-                db = new ReferenceDB(MainActivity.this);
 
-                db.open();
-
-                db.close();
-
-
-    }
 
 
 }

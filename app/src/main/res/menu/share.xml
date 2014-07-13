@@ -4,7 +4,7 @@
 
     <item android:title="مشاركة"
 android:id="@+id/shareMenu"
-        android:showAsAction="always"
+
         android:icon="@android:drawable/ic_menu_share"
         />
 </menu>

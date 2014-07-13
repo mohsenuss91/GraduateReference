@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -17,6 +18,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "reference.db";
     public static String DB_PATH = "/data/data/com.whitedessert.graduatereference/databases/";
+
     public static final int DB_VERSION = 3;
     public static final String TABLE_SPECS = "specs";
     public static final String TABLE_UNIVS = "univs";
@@ -37,6 +39,14 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     public MySQLiteHelper(Context context){
         super(context,DB_NAME,null,DB_VERSION);
         this.context = context;
+        if(android.os.Build.VERSION.SDK_INT >= 17){
+            DB_PATH = context.getApplicationInfo().dataDir + "/databases/";
+        }
+        else
+        {
+            DB_PATH = "/data/data/" + context.getPackageName() + "/databases/";
+        }
+        Log.i("MySQLiteHelper","Database path = " + DB_PATH);
     }
 
     /**
@@ -103,7 +113,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 
 //Open your local db as the input stream
         InputStream myInput = context.getAssets().open(DB_NAME);
-
+        Log.i("MySQLiteHelper", "the input = " + myInput.toString());
 // Path to the just created empty db
         String outFileName = DB_PATH + DB_NAME;
 
@@ -152,22 +162,4 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 
     }
 
-// Add your public helper methods to access and get content from the database.
-// You could return cursors by doing "return myDataBase.query(....)" so it'd be easy
-// to you to create adapters for your views.
-
 }
-    /*@Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
-       // sqLiteDatabase.execSQL(tableCreateUnivs);
-       // sqLiteDatabase.execSQL(tableCreateSpecs);
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
-
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_UNIVS);
-        onCreate(sqLiteDatabase);
-    }*/
-

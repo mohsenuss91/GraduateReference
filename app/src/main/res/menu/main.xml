@@ -4,7 +4,7 @@
         android:id="@+id/about_us_menu"
         android:icon="@drawable/about_icon"
         android:title="من نحن"
-        android:showAsAction="always"
+
         />
 
     <item

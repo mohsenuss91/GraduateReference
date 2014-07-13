@@ -622,10 +622,11 @@ containing a value of this type.
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b0001;
-        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f0b0002;
-        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f0b0003;
-        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f0b0004;
-        public static final int WalletFragmentDefaultStyle=0x7f0b0005;
+        public static final int Theme_IAPTheme=0x7f0b0002;
+        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f0b0003;
+        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f0b0004;
+        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f0b0005;
+        public static final int WalletFragmentDefaultStyle=0x7f0b0006;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
